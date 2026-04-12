@@ -42,6 +42,16 @@ I am optimistic about AI-enabled data systems and focused on creating intelligen
 ## Notable Projects
 
 <div class="card">
+  <h3>CareGraph (Hackathon Project)</h3>
+  <ul>
+    <li>Built an AI-powered senior care intelligence platform that combines daily voice check-ins, Neo4j graph reasoning, and AI-generated care recommendations to surface risks early.</li>
+    <li>Recognized in the top 7 projects in the contest and received positive reviews from judges and sponsors for addressing proactive elder-care monitoring and family support.</li>
+    <li>Live demo: <a href="https://caregraph.onrender.com" target="_blank">caregraph.onrender.com</a> · Repo: <a href="https://github.com/SankarSubbayya/CareGraph" target="_blank">CareGraph</a></li>
+  </ul>
+  <p class="tech-label"><strong>Tech:</strong> Neo4j Aura, FastAPI, CrewAI, RocketRide AI pipelines, GMI Cloud (Qwen3-235B), Bland AI.</p>
+</div>
+
+<div class="card">
   <h3>Reusable Backfill Framework at Disney Streaming</h3>
   <ul>
     <li>Built a reusable framework that transformed static SQL backfill scripts into dynamic, automated workflows.</li>
