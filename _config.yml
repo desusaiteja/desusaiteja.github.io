@@ -1,0 +1,13 @@
+title: Saiteja Desu
+description: Personal portfolio showcasing skills, experience, projects, and achievements.
+theme: minima
+markdown: kramdown
+permalink: pretty
+
+author:
+  name: Saiteja Desu
+  email: desu.saiteja@gmail.com
+
+social_links:
+  github: desusaiteja
+  linkedin: saitejadesu
