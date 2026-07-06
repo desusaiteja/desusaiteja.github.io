@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saiteja Desu — Senior Data Engineer</title>
+  <meta name="description" content="Saiteja Desu — Senior Data Engineer at Disney Streaming. A decade of building petabyte-scale data platforms for analytics, AI, and global streaming.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <a class="nav-logo" href="#top">sd<span class="cursor-blink">_</span></a>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
+    <a href="#oss">open-source</a>
+    <a href="#contact">contact</a>
+  </div>
+  <div class="nav-status" title="Currently at Disney Streaming">
+    <span class="dot dot-green"></span><span class="nav-status-text">streaming&nbsp;live</span>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ══════════ HERO ══════════ -->
+  <header class="hero">
+    <p class="eyebrow">// senior data engineer @ disney streaming</p>
+    <h1>Saiteja&nbsp;Desu</h1>
+    <p class="hero-sub">I build the data platforms that big decisions ride on — moving petabytes
+    across streaming media and semiconductor manufacturing, and turning fragile manual
+    data operations into automated, observable systems.</p>
+
+    <div class="stat-strip" role="list">
+      <div class="stat" role="listitem">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">years in data engineering</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat-num">PB</span>
+        <span class="stat-label">scale platforms operated</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat-num">23</span>
+        <span class="stat-label">countries, unified reporting</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat-num">CEO</span>
+        <span class="stat-label">award, GlobalFoundries ’20</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════ SIGNATURE: LIVE PIPELINE ══════════ -->
+  <section class="pipeline-panel" aria-label="Site navigation as a data pipeline">
+    <div class="panel-head">
+      <span class="panel-title">career.dag</span>
+      <span class="panel-meta"><span class="dot dot-green"></span> operational&nbsp;· records processed: <span id="rec-counter">8,431,204,117</span></span>
+    </div>
+    <div class="pipeline-scroll">
+      <svg class="pipeline" viewBox="0 0 1160 232" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated data pipeline. Each stage links to a section of this page.">
+        <defs>
+          <filter id="pglow" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur stdDeviation="3" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- pipes -->
+        <g class="pipes">
+          <path d="M170,104 H262" /><path d="M415,104 H507" />
+          <path d="M660,104 H752" /><path d="M905,104 H997" />
+          <path class="dlq-pipe" d="M583.5,140 V176" />
+        </g>
+
+        <!-- flowing packets -->
+        <g class="packets">
+          <circle r="4"><animateMotion dur="2.6s" begin="0s"    repeatCount="indefinite" path="M170,104 H262"/></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="1.3s"  repeatCount="indefinite" path="M170,104 H262"/></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="0.4s"  repeatCount="indefinite" path="M415,104 H507"/></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="1.7s"  repeatCount="indefinite" path="M415,104 H507"/></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="0.9s"  repeatCount="indefinite" path="M660,104 H752"/></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="2.1s"  repeatCount="indefinite" path="M660,104 H752"/></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="0.2s"  repeatCount="indefinite" path="M905,104 H997"/></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="1.5s"  repeatCount="indefinite" path="M905,104 H997"/></circle>
+        </g>
+
+        <!-- throughput labels -->
+        <g class="pipe-labels">
+          <text x="216" y="92">2.4M rec/s</text>
+          <text x="461" y="92">exactly-once</text>
+          <text x="706" y="92">zero-copy</text>
+          <text x="951" y="92">low latency</text>
+        </g>
+
+        <!-- stage nodes -->
+        <a href="#about" class="pnode">
+          <rect x="14" y="68" width="156" height="72" rx="10"/>
+          <text class="pstage" x="92" y="94">source</text>
+          <text class="plabel" x="92" y="120">About</text>
+          <circle class="pdot" cx="30" cy="84" r="3"/>
+        </a>
+        <a href="#experience" class="pnode">
+          <rect x="259" y="68" width="156" height="72" rx="10"/>
+          <text class="pstage" x="337" y="94">transform</text>
+          <text class="plabel" x="337" y="120">Experience</text>
+          <circle class="pdot" cx="275" cy="84" r="3"/>
+        </a>
+        <a href="#projects" class="pnode">
+          <rect x="504" y="68" width="156" height="72" rx="10"/>
+          <text class="pstage" x="582" y="94">aggregate</text>
+          <text class="plabel" x="582" y="120">Projects</text>
+          <circle class="pdot" cx="520" cy="84" r="3"/>
+        </a>
+        <a href="#oss" class="pnode">
+          <rect x="749" y="68" width="156" height="72" rx="10"/>
+          <text class="pstage" x="827" y="94">publish</text>
+          <text class="plabel" x="827" y="120">Open Source</text>
+          <circle class="pdot" cx="765" cy="84" r="3"/>
+        </a>
+        <a href="#contact" class="pnode">
+          <rect x="994" y="68" width="156" height="72" rx="10"/>
+          <text class="pstage" x="1072" y="94">sink</text>
+          <text class="plabel" x="1072" y="120">Contact</text>
+          <circle class="pdot" cx="1010" cy="84" r="3"/>
+        </a>
+
+        <!-- dead letter queue easter egg -->
+        <g class="dlq">
+          <rect x="533" y="178" width="101" height="34" rx="7"/>
+          <text x="583.5" y="200">dlq · 0 msgs</text>
+        </g>
+      </svg>
+    </div>
+    <p class="pipeline-hint">↳ this page runs like my pipelines — pick a stage to jump in. <span class="hint-mobile">scroll the diagram sideways on small screens.</span></p>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section id="about" class="section reveal">
+    <h2><span class="h-index">01</span>about</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>For over a decade I’ve done one thing well: <strong>make large-scale data
+        infrastructure trustworthy</strong>. Pipelines that don’t silently break, backfills that
+        don’t need a human babysitter, metadata that analytics and recommendation systems can
+        actually rely on.</p>
+        <p>At <strong>Disney Streaming</strong> I led the integration of Hotstar’s data into the
+        Disney ecosystem — unlocking unified content-performance reporting across ~23 countries —
+        and authored a config-driven backfill framework my teammates now reuse well beyond its
+        original purpose. Before that, at <strong>GLOBALFOUNDRIES</strong>, I was a key contributor
+        to the cloud-native ingestion platform behind the company’s global data lake — thousands of
+        streaming pipelines carrying petabyte-scale manufacturing data — and built its monitoring
+        application from scratch, work recognized with the company’s <strong>2020 CEO Award</strong>.</p>
+        <p>These days I’m also giving back upstream: contributing code to
+        <strong>Apache Airflow</strong> and open energy-data projects like PUDL and OED.</p>
+      </div>
+      <aside class="about-side">
+        <div class="side-block">
+          <h4>currently</h4>
+          <p>Senior Data Engineer<br>Disney Streaming · SF Bay Area</p>
+        </div>
+        <div class="side-block">
+          <h4>focus</h4>
+          <p>Pipeline reliability · metadata architecture · backfill &amp; reprocessing automation · data for ML</p>
+        </div>
+        <div class="side-block">
+          <h4>stack of choice</h4>
+          <p>Databricks · PySpark · Delta Lake · Airflow · AWS · Snowflake</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══════════ EXPERIENCE ══════════ -->
+  <section id="experience" class="section reveal">
+    <h2><span class="h-index">02</span>experience</h2>
+
+    <div class="xp">
+      <div class="xp-rail" aria-hidden="true"></div>
+
+      <article class="xp-item reveal">
+        <div class="xp-marker current" aria-hidden="true"></div>
+        <header class="xp-head">
+          <h3>Disney Streaming</h3>
+          <p class="xp-meta"><span class="xp-role">Senior Data Engineer</span> · Jun 2022 – present · SF Bay Area</p>
+        </header>
+        <ul>
+          <li>Led the integration of <strong>Hotstar data into Disney’s ecosystem across ~23 countries</strong>, solving deep metadata-matching challenges to unlock unified content-performance reporting for EMEA and APAC markets.</li>
+          <li>Architected a <strong>config-driven backfill framework</strong> that turned static SQL backfills into dynamic, parameterized workflows — now adopted by engineers across the team and cutting reprocessing effort and cost dramatically.</li>
+          <li>Design and operate <strong>Databricks / PySpark pipelines that feed analytics and recommendation engines</strong>, optimizing compute cost while improving reliability and runtime.</li>
+          <li>Built and operationalized the content-metadata systems behind launch-critical reporting for major product rollouts; the team’s go-to expert for metadata and pipeline architecture.</li>
+          <li>Mentor junior engineers on delivery quality and technical ownership.</li>
+        </ul>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-marker" aria-hidden="true"></div>
+        <header class="xp-head">
+          <h3>GLOBALFOUNDRIES</h3>
+          <p class="xp-meta"><span class="xp-role">Data Engineer</span> · Jul 2019 – May 2022 · Malta, NY</p>
+        </header>
+        <ul>
+          <li>Key contributor to the cloud-native ingestion platform that became the foundation of the company’s <strong>global data lake — thousands of streaming pipelines, petabyte-scale manufacturing data</strong> on AWS (EMR, Glue, S3, Lambda, Redshift).</li>
+          <li>Designed and built a <strong>pipeline-health monitoring application from scratch</strong>, shifting the team from reactive firefighting to proactive issue detection across thousands of production pipelines.</li>
+          <li>Partnered with AI/ML teams to deliver the high-fidelity data behind <strong>predictive yield models</strong> for semiconductor manufacturing.</li>
+          <li>Improved data-mart performance and scalability by eliminating bottleneck queries in Oracle environments.</li>
+          <li>Recognized with the <strong>2020 CEO Award</strong> and multiple Spotlight Awards for innovation and intelligent automation.</li>
+        </ul>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-marker" aria-hidden="true"></div>
+        <header class="xp-head">
+          <h3>San Jose State University</h3>
+          <p class="xp-meta"><span class="xp-role">Business Intelligence Intern</span> · May 2018 – May 2019 · San Jose, CA</p>
+        </header>
+        <ul>
+          <li>Delivered data-driven insights to department chairs to support student success, via interactive OBIEE dashboards.</li>
+          <li>Developed complex ETL jobs with PL/SQL and collaborated on star- and snowflake-schema data models.</li>
+        </ul>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-marker" aria-hidden="true"></div>
+        <header class="xp-head">
+          <h3>Tata Consultancy Services</h3>
+          <p class="xp-meta"><span class="xp-role">Systems Engineer</span> · Jun 2014 – Jul 2017 · Mumbai, India</p>
+        </header>
+        <ul>
+          <li>Delivered <strong>$120K in annual cost savings</strong> by designing reusable components and automating data workflows.</li>
+          <li>Cut data-warehouse load time by <strong>40%</strong> by optimizing Informatica transformations and shell scripts.</li>
+          <li>Recognized with <strong>“Star of the Month” and “On the Spot”</strong> awards during critical project periods.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section id="projects" class="section reveal">
+    <h2><span class="h-index">03</span>selected work</h2>
+    <div class="proj-grid">
+
+      <article class="proj reveal">
+        <p class="proj-tag">hackathon · top 7</p>
+        <h3>CareGraph</h3>
+        <p>AI-powered senior-care intelligence: daily voice check-ins, Neo4j graph reasoning, and
+        AI-generated care recommendations that surface health risks early. Placed in the
+        <strong>top 7</strong> with strong reviews from judges and sponsors.</p>
+        <p class="proj-tech">Neo4j Aura · FastAPI · CrewAI · Qwen3-235B · Bland AI</p>
+        <p class="proj-links">
+          <a href="https://caregraph.onrender.com" target="_blank" rel="noopener">live demo ↗</a>
+          <a href="https://github.com/SankarSubbayya/CareGraph" target="_blank" rel="noopener">repo ↗</a>
+        </p>
+      </article>
+
+      <article class="proj reveal">
+        <p class="proj-tag">disney streaming</p>
+        <h3>Config-Driven Backfill Framework</h3>
+        <p>Turned static SQL backfill scripts into dynamic, parameter-driven workflows for
+        large-scale historical reprocessing. Adopted by engineers across the team — the pattern
+        outgrew its original use case.</p>
+        <p class="proj-tech">SQL · Databricks · ETL orchestration · pipeline design</p>
+      </article>
+
+      <article class="proj reveal">
+        <p class="proj-tag">disney streaming</p>
+        <h3>Hotstar → Disney Data Integration</h3>
+        <p>Unified an acquired streaming service’s data into the parent ecosystem using layered
+        fuzzy metadata matching — enabling one consistent view of content performance across
+        <strong>~23 countries</strong> for global stakeholders.</p>
+        <p class="proj-tech">PySpark · Databricks · cross-platform data modeling</p>
+      </article>
+
+      <article class="proj reveal">
+        <p class="proj-tag">globalfoundries</p>
+        <h3>Pipeline Health Monitoring Platform</h3>
+        <p>A monitoring application built from the ground up to watch thousands of production
+        pipelines feeding a petabyte-scale data lake — replacing reactive troubleshooting with
+        proactive detection for manufacturing-critical data.</p>
+        <p class="proj-tech">PySpark · Java · AWS Lambda / EMR / S3 / Glue · Redshift</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════ OPEN SOURCE ══════════ -->
+  <section id="oss" class="section reveal">
+    <h2><span class="h-index">04</span>open source</h2>
+    <div class="oss-list">
+      <article class="oss-item reveal">
+        <div class="oss-name">
+          <h3>Apache Airflow</h3>
+          <span class="oss-badge">merged ✓</span>
+        </div>
+        <p>Code contributor to the orchestration system that runs most of the world’s production
+        data platforms. First substantive pull request merged into <code>main</code> after
+        committer review and milestoned for the <strong>Airflow 3.2.2 release</strong> — with more
+        contributions in flight across scheduler and operator behavior.</p>
+      </article>
+      <article class="oss-item reveal">
+        <div class="oss-name">
+          <h3>PUDL &amp; Open Energy Dashboard</h3>
+          <span class="oss-badge alt">energy data</span>
+        </div>
+        <p>Contributor to open energy-data projects — the Public Utility Data Liberation project
+        and OED — helping make public infrastructure data usable for researchers and analysts.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section id="skills" class="section reveal">
+    <h2><span class="h-index">05</span>toolbox</h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h4>languages</h4>
+        <div class="chips"><span>Python</span><span>SQL</span><span>PySpark</span><span>Java</span><span>Scala</span><span>PL/SQL</span><span>R</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>cloud &amp; big data</h4>
+        <div class="chips"><span>Databricks</span><span>Delta Lake</span><span>Apache Spark</span><span>AWS · EMR / S3 / Glue / Lambda</span><span>Redshift</span><span>Snowflake</span><span>GCP</span><span>Docker</span><span>Kubernetes</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>data engineering</h4>
+        <div class="chips"><span>Apache Airflow</span><span>ETL design</span><span>Backfill automation</span><span>Dimensional modeling</span><span>Informatica</span><span>Pipeline observability</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>ai &amp; analytics</h4>
+        <div class="chips"><span>Claude &amp; agentic workflows</span><span>Cursor</span><span>Neo4j</span><span>Scikit-Learn</span><span>Pandas</span><span>Tableau</span><span>Power BI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ AWARDS + EDUCATION ══════════ -->
+  <section id="awards" class="section reveal">
+    <div class="two-col">
+      <div>
+        <h2><span class="h-index">06</span>recognition</h2>
+        <ul class="award-list">
+          <li><span class="award-year">2020</span>CEO Award — GLOBALFOUNDRIES</li>
+          <li><span class="award-year">19–22</span>Multiple Spotlight Awards — GLOBALFOUNDRIES</li>
+          <li><span class="award-year">14–17</span>“Star of the Month” &amp; “On the Spot” — TCS</li>
+          <li><span class="award-year">cert</span>Databricks Certified Associate Developer — Apache Spark 3.0</li>
+          <li><span class="award-year">2026</span>Top-7 finish — CareGraph, AI hackathon</li>
+        </ul>
+      </div>
+      <div>
+        <h2><span class="h-index">07</span>education</h2>
+        <ul class="edu-list">
+          <li>
+            <h4>San Jose State University</h4>
+            <p>M.S. Computer Software Engineering — Cloud &amp; Data Science · 2017–2019</p>
+          </li>
+          <li>
+            <h4>KL University</h4>
+            <p>B.Tech. Computer Science &amp; Engineering · 2010–2014</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section id="contact" class="section contact reveal">
+    <h2><span class="h-index">08</span>sink — where the data lands</h2>
+    <p class="contact-line">Building something where the data has to be right? Let’s talk.</p>
+    <div class="contact-links">
+      <a href="mailto:desu.saiteja@gmail.com">✉ desu.saiteja@gmail.com</a>
+      <a href="https://www.linkedin.com/in/saitejadesu/" target="_blank" rel="noopener">linkedin ↗</a>
+      <a href="https://github.com/desusaiteja" target="_blank" rel="noopener">github ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

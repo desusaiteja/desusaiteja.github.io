@@ -4,3 +4,13 @@ _site/
 .jekyll-cache/
 .sass-cache/
 .bundle/
+
+# Private NIW case file — never publish to GitHub Pages or the public repo
+niw/
+.cursor/rules/niw.mdc
+.cursor/rules/niw-profile-intake.mdc
+.cursor/commands/niw-*.md
+.cursor/skills/niw-research/
+
+# Local tooling config
+.claude/
